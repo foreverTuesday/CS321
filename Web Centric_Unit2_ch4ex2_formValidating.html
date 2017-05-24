@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>validating forms | Ch4 Ex2</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <link rel="stylesheet" href="basic.css" type="text/css">
+</head>
+
+<body>
+
+    <form name="info" id="info">
+        <fieldset>
+            <legend>Identifying Information</legend>First name:
+            <br>
+            <!--input[0]-->
+            <input type="text" name="firstname" id="firstname" required>
+            <br>Middle name:
+            <br>
+            <!--input[1]-->
+            <input type="text" name="middlename" id="middlename">
+            <br>Last name:
+            <br>
+            <!--input[2]-->
+            <input type="text" name="lastname" id="lastname" required>
+            <br>
+            <br>Birth date:
+            <!--input[3]-->
+            <input type="date" name="bday" id="bday" value="1700-01-01" required>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Contact Information</legend>Email:
+            <br>
+            <!--input[4]-->
+            <input type="email" name="email" id="email" required>
+            <br>
+            <br>Phone numbers:
+            <br>
+            <!--input[5]-->
+            <input type="tel" name="phone1input" id="phone1input" required>
+            <br>
+            <!--input[6]-->
+            <input type="radio" name="phone1" id="phone1" value="home">Home
+            <!--input[7]-->
+            <input type="radio" name="phone1" id="phone1" value="cell">Cell
+            <!--input[8]-->
+            <input type="radio" name="phone1" id="phone1" value="work">Work
+            <br>
+            <br>
+            <!--input[9]-->
+            <input type="tel" name="phone2input" id="phone2input">
+            <br>
+            <!--input[10]-->
+            <input type="radio" name="phone2" id="phone2" value="home">Home
+            <!--input[11]-->
+            <input type="radio" name="phone2" id="phone2" value="cell">Cell
+            <!--input[12]-->
+            <input type="radio" name="phone2" id="phone2" value="work">Work
+            <br>
+            <br>
+            <!--input[13]-->
+            <input type="tel" name="phone3input" id="phone3input">
+            <br>
+            <!--input[14]-->
+            <input type="radio" name="phone3" id="phone3" value="home">Home
+            <!--input[15]-->
+            <input type="radio" name="phone3" id="phone3" value="cell">Cell
+            <!--input[16]-->
+            <input type="radio" name="phone3" id="phone3" value="work">Work
+
+            <br>
+            <br>
+
+            <input type="checkbox" name="emailOffers" id="emailOffers">Email me with special offers
+            <br>
+            <input type="checkbox" name="phoneOffers" id="phoneOffers">Call me with special offers
+            <br>
+            <input type="checkbox" name="textOffers" id="textOffers">Text me with special offers
+            <br>
+            <br>
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Address Information</legend>Address Line 1:
+            <br>
+            <input type="text" name="address1" id="address1" required>
+            <br>
+            <br>Address Line 2:
+            <br>
+            <input type="text" name="address2" id="address2">
+            <br>
+            <br>City:
+            <br>
+            <input type="text" name="city" id="city" required>
+            <br>State:
+            <br>
+            <select name="state" id="state" required>
+                <option value="AL">Alabama</option>
+                <option value="AK">Alaska</option>
+                <option value="AZ">Arizona</option>
+                <option value="AR">Arkansas</option>
+                <option value="CA">California</option>
+                <option value="CO">Colorado</option>
+                <option value="CT">Connecticut</option>
+                <option value="DE">Delaware</option>
+                <option value="DC">District Of Columbia</option>
+                <option value="FL">Florida</option>
+                <option value="GA">Georgia</option>
+                <option value="HI">Hawaii</option>
+                <option value="ID">Idaho</option>
+                <option value="IL">Illinois</option>
+                <option value="IN">Indiana</option>
+                <option value="IA">Iowa</option>
+                <option value="KS">Kansas</option>
+                <option value="KY">Kentucky</option>
+                <option value="LA">Louisiana</option>
+                <option value="ME">Maine</option>
+                <option value="MD">Maryland</option>
+                <option value="MA">Massachusetts</option>
+                <option value="MI">Michigan</option>
+                <option value="MN">Minnesota</option>
+                <option value="MS">Mississippi</option>
+                <option value="MO">Missouri</option>
+                <option value="MT">Montana</option>
+                <option value="NE">Nebraska</option>
+                <option value="NV">Nevada</option>
+                <option value="NH">New Hampshire</option>
+                <option value="NJ">New Jersey</option>
+                <option value="NM">New Mexico</option>
+                <option value="NY">New York</option>
+                <option value="NC">North Carolina</option>
+                <option value="ND">North Dakota</option>
+                <option value="OH">Ohio</option>
+                <option value="OK">Oklahoma</option>
+                <option value="OR">Oregon</option>
+                <option value="PA">Pennsylvania</option>
+                <option value="RI">Rhode Island</option>
+                <option value="SC">South Carolina</option>
+                <option value="SD">South Dakota</option>
+                <option value="TN">Tennessee</option>
+                <option value="TX">Texas</option>
+                <option value="UT">Utah</option>
+                <option value="VT">Vermont</option>
+                <option value="VA">Virginia</option>
+                <option value="WA">Washington</option>
+                <option value="WV">West Virginia</option>
+                <option value="WI">Wisconsin</option>
+                <option value="WY">Wyoming</option>
+                <option value="AS">American Samoa</option>
+                <option value="GU">Guam</option>
+                <option value="MP">Northern Mariana Islands</option>
+                <option value="PR">Puerto Rico</option>
+                <option value="UM">United States Minor Outlying Islands</option>
+                <option value="VI">Virgin Islands</option>
+                <option value="AA">Armed Forces Americas</option>
+                <option value="AP">Armed Forces Pacific</option>
+                <option value="AE">Armed Forces Others</option>
+            </select>
+            <br>Zip Code:
+            <br>
+            <input type="text" name="zip" id="zip" required>
+
+        </fieldset>
+
+        <br>
+        <br>
+
+        <fieldset>
+            <legend>Account Registration</legend>Username
+            <br>
+            <input tpe-="text" name="usr" id="usr" required>
+            <br>Password
+            <br>
+            <input type="text" name="pw" id="pw" required>
+            <br>Confirm password
+            <br>
+            <input type="text" name="pwConf" id="pwConf" required>
+            <br>
+            <br>Security Question
+            <br>
+            <select name="sec" id="sec" required>
+                <option value="pet">What was your first pet's name?</option>
+                <option value="born">In what city were you born?</option>
+                <option value="street">What street did you grow up on?</option>
+                <option value="book">What your favorite book?</option>
+                <option value="mother">What is your mother's maiden name?</option>
+            </select>
+            <br>Security Answer
+            <br>
+            <input type="text" name="secAns" id="secAns" required>
+        </fieldset>
+
+        <input type="reset" name="reset" id="reset">
+
+    </form>
+
+    <br>
+    <br>
+
+    <input type="checkbox" name="terms" id="terms" required>I agree with the <a href="terms.html" target="_blank">privacy policy and terms and conditions</a>.
+
+    <br>
+
+    <script src="ch4ex2.js" type="text/javascript"></script>
+    <button onclick="confirmFunction()" name="done" id="done">I'm done!</button>
+
+    <br>
+    <br>
+
+
+</body>
+
+</html>

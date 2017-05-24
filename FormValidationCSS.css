@@ -1,0 +1,14 @@
+body{
+	margin: 3% 5%;
+	border: 0;
+	padding: 10px;
+	width: 80%;
+	font-family: 'Lato', sans-serif;
+	font-size: 18px;
+}
+
+.poem{
+	margin: 2% 2.5%;
+	border: 1px solid darkblue;
+	padding: 1.5% 2.5%;
+}
